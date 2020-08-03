@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* Initial color of the background is #fafafa */
+    background-color: #fafafa;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+
+    /* Changes the background color smoothly */
+    transition: background 0.2s linear;
+}
+
+/* Changes website's background color to Dark */
+body.dark {
+    background-color: #292C35;
+}
+
+/* Changes text color to white when in darkmode */
+body.dark p {
+    color: #fff;
+}
+
+p {
+    text-align: center;
+}
+
+.checkbox {
+    /* Make class='checkbox' invisible */
+    opacity: 0;
+
+    position: absolute;
+}
+
+/* This means : if the checkbox is checked, then target the changes to the class='label' and class='ball' */
+.checkbox:checked + .label .ball {
+    transform: translateX(23px);
+}
+
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0);
+    transition: transform 0.2s linear;
+}
+
+.label {
+    height: 26px;
+    width: 50px;
+    background-color: #111;
+    display: flex;
+    border-radius: 50px;
+    cursor: pointer;
+    align-items: center;
+    position: relative;
+    padding: 5px;
+    justify-content: space-between;
+
+    /* Make toggle bigger */
+    transform: scale(1.5);
+}
+
+.ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+
+    /* transition and 'linear' will make the button slides slowly when clicked */
+    transition: transform 0.2s linear;
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+
+
