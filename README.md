@@ -11,4 +11,5 @@ This is how this app looks :
 ### Dark-Theme
 <img src="https://raw.githubusercontent.com/kevinadhiguna/light-dark-theme-changer/master/demo/dark-theme.png" width="90%"></img>
 
-[![Visits Badge](https://badges.pufler.dev/visits/kevinadhiguna/light-dark-theme-changer)](https://github.com/kevinadhiguna)
+
+![Hello !](https://api.visitorbadge.io/api/VisitorHit?user=kevinadhiguna&repo=light-dark-theme-changer&label=thanks%20for%20dropping%20in%20!&labelColor=%23000000&countColor=%23FFFFFF)
